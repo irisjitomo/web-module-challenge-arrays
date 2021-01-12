@@ -47,13 +47,9 @@ Use the copy function below to do the following:
 
 function copy(arr){
     /*your code here*/
-    copyArr = [...arr]
+    let copyArr = [...arr]
     return copyArr
-}    
-
-
-
-
+}
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Confirm that an array is exactly 31 flavors. Your function should accept:
@@ -66,8 +62,11 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
+function is31Flavors(arr){
    /*your code here*/
+   if (arr.length == 31) {
+       return true
+   }
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -83,8 +82,10 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
+function addFlavor(arr, newFlavor){
    /*your code here*/
+   arr.unshift(newFlavor)
+   return arr
 }
 
 
