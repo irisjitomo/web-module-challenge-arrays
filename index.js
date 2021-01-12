@@ -173,8 +173,15 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
+function filterByWord(arr, flavor){
     /*your code here*/
+    let newArr = []
+    for (let i of arr) {
+        if (i.includes(flavor)) {
+            newArr.push(i)
+        }
+    }
+    return newArr
 }
 
 
